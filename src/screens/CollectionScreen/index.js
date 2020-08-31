@@ -42,7 +42,7 @@ const CollectionScreen = () => {
             </a>
           </div>
         </div>
-        {/* <footer>
+        <footer>
           <div className='slider-controller'>
             <button></button>
             <button></button>
@@ -51,7 +51,7 @@ const CollectionScreen = () => {
             <div></div>
             <div></div>
           </div>
-        </footer> */}
+        </footer>
       </section>
     </div>
   );
