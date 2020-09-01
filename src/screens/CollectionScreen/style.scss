@@ -7,29 +7,6 @@
     align-items: stretch;
     flex: 1;
     position: relative;
-    .slider-img {
-      width: 100%;
-      background-size: cover;
-      background-image: url('../../assets/blackPanther.webp');
-      position: relative;
-      &::before {
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        top: 46%;
-        border: 2px solid #222;
-        left: 46px;
-      }
-      .slide-count {
-        position: absolute;
-        top: 30%;
-        transform: rotate(-90deg);
-        display: inline-block;
-        font-size: 5em;
-        font-weight: 700;
-      }
-    }
     .slide-price {
       position: absolute;
       bottom: 32px;
@@ -81,9 +58,6 @@
           padding: 8px 0;
         }
       }
-    }
-    footer {
-      flex: 1;
     }
   }
 }

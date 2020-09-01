@@ -5,13 +5,34 @@ import './style.scss';
 import facebook from '../../assets/facebook-f-brands.svg';
 import instagram from '../../assets/instagram-brands.svg';
 import twitter from '../../assets/twitter-brands.svg';
+import ImageSlider from './component/ImageSlider';
+import Footer from './component/Footer';
+
+import Image1 from '../../assets/image1.jpg';
+import Image2 from '../../assets/image2.jpg';
+import Image3 from '../../assets/image4.webp';
+import Image4 from '../../assets/image5.jpg';
+
 const CollectionScreen = () => {
+  const [activeImage, setActiveImage] = useState(0);
+  const images = [Image1, Image2, Image3, Image4];
+
+  const handleLeftClick = () => {
+    if (activeImage > 0) {
+      setActiveImage(activeImage - 1);
+    }
+  };
+
+  const handleRightClick = () => {
+    if (activeImage < images.length - 1) {
+      setActiveImage(activeImage + 1);
+    }
+  };
+
   return (
-    <div class={'collection-container'}>
+    <div className={'collection-container'}>
       <section className={'side-image'}>
-        <div className={'slider-img'}>
-          <span className={'slide-count'}>01</span>
-        </div>
+        <ImageSlider activeImage={activeImage} images={images} />
         <span className={'slide-price'}>$ 1337</span>
       </section>
       <section className={'container'}>
@@ -21,9 +42,9 @@ const CollectionScreen = () => {
             <h1>
               Explore brand <br /> new fashion clothes
             </h1>
-            <hr class={'header-divider'} />
-            <p class={'description'}>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            <hr className={'header-divider'} />
+            <p className={'description'}>
+              Lorem ipsumc, dolor sit amet consectetur adipisicing elit. Dolores
               voluptatibus tempora provident laboriosam accusamus iusto harum
               expedita dolor sit. Molestias nemo ea eligendi quaerat quidem
               laboriosam accusantium tempore, dolorum odio!
@@ -32,26 +53,20 @@ const CollectionScreen = () => {
           </main>
           <div className='social-link'>
             <a href='#'>
-              <IconComponent svg={facebook} />
+              <img src={facebook} width={24} height={24} />
             </a>
             <a href='#'>
-              <IconComponent svg={twitter} />
+              <img src={twitter} width={24} height={24} />
             </a>
             <a href='#'>
-              <IconComponent svg={instagram} />
+              <img src={instagram} width={24} height={24} />
             </a>
           </div>
         </div>
-        <footer>
-          <div className='slider-controller'>
-            <button></button>
-            <button></button>
-          </div>
-          <div className='other-descriptions'>
-            <div></div>
-            <div></div>
-          </div>
-        </footer>
+        <Footer
+          handleLeftClick={handleLeftClick}
+          handleRightClick={handleRightClick}
+        />
       </section>
     </div>
   );
