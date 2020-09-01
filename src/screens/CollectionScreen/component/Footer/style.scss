@@ -1,0 +1,25 @@
+footer {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: center;
+  align-items: stretch;
+  .slider-controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    button {
+      cursor: pointer;
+      background: transparent;
+      border: 0;
+      outline: none;
+      img.arrow {
+        width: 46px;
+      }
+    }
+  }
+  .other-descriptions {
+    flex: 2;
+  }
+}
