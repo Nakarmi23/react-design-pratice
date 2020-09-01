@@ -1,0 +1,23 @@
+.slider-img {
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    top: 46%;
+    border: 2px solid #222;
+    left: 46px;
+  }
+  .slide-count {
+    position: absolute;
+    top: 30%;
+    transform: rotate(-90deg);
+    display: inline-block;
+    font-size: 5em;
+    font-weight: 700;
+    left: 16px;
+  }
+}
