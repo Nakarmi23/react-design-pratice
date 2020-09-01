@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Appbar from './component/Appbar';
-import IconComponent from './component/IconComponent';
 import './style.scss';
+
 import facebook from '../../assets/facebook-f-brands.svg';
 import instagram from '../../assets/instagram-brands.svg';
 import twitter from '../../assets/twitter-brands.svg';
