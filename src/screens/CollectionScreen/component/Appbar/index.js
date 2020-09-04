@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.scss';
 
-import searchIcon from '../../../../assets/search-24px.svg';
-import userIcon from '../../../../assets/person-24px.svg';
+import searchIcon from '../../assets/search-24px.svg';
+import userIcon from '../../assets/person-24px.svg';
 
 const Appbar = () => {
   return (

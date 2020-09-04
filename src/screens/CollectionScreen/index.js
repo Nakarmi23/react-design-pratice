@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import Appbar from './component/Appbar';
 import './style.scss';
 
-import facebook from '../../assets/facebook-f-brands.svg';
-import instagram from '../../assets/instagram-brands.svg';
-import twitter from '../../assets/twitter-brands.svg';
+import facebook from './assets/facebook-f-brands.svg';
+import instagram from './assets/instagram-brands.svg';
+import twitter from './assets/twitter-brands.svg';
 import ImageSlider from './component/ImageSlider';
 import Footer from './component/Footer';
 
-import Image1 from '../../assets/image1.jpg';
-import Image2 from '../../assets/image2.jpg';
-import Image3 from '../../assets/image4.webp';
-import Image4 from '../../assets/image5.jpg';
+import Image1 from './assets/image1.jpg';
+import Image2 from './assets/image2.jpg';
+import Image3 from './assets/image4.webp';
+import Image4 from './assets/image5.jpg';
 
 const CollectionScreen = () => {
   const [activeImage, setActiveImage] = useState(0);

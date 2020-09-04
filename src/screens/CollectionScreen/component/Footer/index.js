@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.scss';
 
-import left from '../../../../assets/chevron_left-24px.svg';
-import right from '../../../../assets/chevron_right-24px.svg';
+import left from '../../assets/chevron_left-24px.svg';
+import right from '../../assets/chevron_right-24px.svg';
 
 const Footer = (props) => {
   return (

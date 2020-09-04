@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.scss';
 
-import CollectionScreen from './screens/CollectionScreen';
+import MusicSiteResponsive from './screens/MusicSiteResponsive';
 
 function App() {
-  return <CollectionScreen />;
+  return <MusicSiteResponsive />;
 }
 
 export default App;
